@@ -21,7 +21,7 @@ const PersonalScreen = () =>{
       <View style = {styles.container_menu}>
        <Komponent.ButtonPrimary title = "Cara menggunakan" screenName =""/>
         <Komponent.ButtonPrimary title = "Konsultasi" screenName ="Konsultasi"/>
-        <Komponent.ButtonPrimary title =" Ganti password" screenName=""/>
+        <Komponent.ButtonPrimary title =" Pembayaran" screenName="Payment"/>
         <Komponent.ButtonPrimary title = "Logout" screenName="Login"/>
       </View>
     </View>

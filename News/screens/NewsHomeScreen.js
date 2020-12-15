@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, RefreshControl, ImageBackground, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, RefreshControl, ImageBackground,Image, TouchableOpacity } from 'react-native';
 import { Text, ActivityIndicator, Title } from 'react-native-paper';
 import { StatusBar } from 'expo-status-bar';
 
 import NewsList from '../components/NewsList';
+import NEWS_API from '../api/news_api';
 
+import Constants from 'expo-constants';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FlatList } from 'react-native-gesture-handler';
 
-import NEWS_API from '../api/news_api';
+
 
 const categoryList = [
    
@@ -106,13 +108,18 @@ const NewsHomeScreen = ({ navigation }) => {
         </SafeAreaView>
     );
 }
-
+// backgroundColor: 'rgba(0,0,0,0.8)'
 const styles = StyleSheet.create({
     container: {
+    
       flex: 1,
       backgroundColor: 'rgba(0,0,0,0.8)',
       alignItems: 'stretch',
       justifyContent: 'flex-start',
+    },
+    praHeading:{
+        backgroundColor:'#00a46c',
+
     },
     heading: {
       marginLeft: 10,

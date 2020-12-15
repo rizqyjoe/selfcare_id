@@ -8,6 +8,9 @@ import RegisterScreen from './RegisterScreen';
 import BottomMenu from './BottomMenu';
 import  {Transfer,TransferBerhasil} from './TransferScreen';
 import ChatScreen from "../Screen/ChatScreen";
+import Constants from 'expo-constants';
+import Payment from "../Payment/Payment";
+import KonfChat from "../Payment/KonfChat";
 
 const Stack = createStackNavigator();
  /*<Stack.Screen
@@ -17,7 +20,7 @@ const Stack = createStackNavigator();
               */
 const MainStackMenu = () =>{
     return(
-    <Stack.Navigator screenOptions = {{headerShown:false}}>
+    <Stack.Navigator screenOptions = {{headerShown:false }}>
             <Stack.Screen
             name = "Login"
             component = {LoginScreen}
@@ -44,6 +47,18 @@ const MainStackMenu = () =>{
               name ="Transfer"
               component = {Transfer}
               />
+              <Stack.Screen
+            name = "Payment"
+            component = {Payment}
+            options={{title:null}}
+            /> 
+            
+            <Stack.Screen
+            name = "KonfChat"
+            component = {KonfChat}
+            options={{title:null}}
+            /> 
+
               <Stack.Screen
             name = "Konsultasi"
             component = {ChatScreen}
