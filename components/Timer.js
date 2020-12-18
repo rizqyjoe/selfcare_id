@@ -208,7 +208,7 @@ export default class Timer extends React.Component {
           />
         </View>
         <View style={styles.inputContainer}>
-          <Text style={styles.inputLabel}>Break Mins:</Text>
+          <Text style={styles.inputLabel}>Work Mins:</Text>
           <TextInput
             defaultValue={`${this.state.breakInputValue}`}
             maxLength={3}

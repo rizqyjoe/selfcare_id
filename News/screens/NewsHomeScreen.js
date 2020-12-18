@@ -111,14 +111,12 @@ const NewsHomeScreen = ({ navigation }) => {
 // backgroundColor: 'rgba(0,0,0,0.8)'
 const styles = StyleSheet.create({
     container: {
-    
       flex: 1,
       alignItems: 'stretch',
       justifyContent: 'flex-start',
     },
     praHeading:{
         backgroundColor:'#00a46c',
-
     },
     heading: {
       marginLeft: 10,

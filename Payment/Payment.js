@@ -36,7 +36,7 @@ const Payment = ({navigation}) => {
                             height:4,
                             backgroundColor:"#b1e5d3",
                             width:204,
-                            marginTop:-1
+                            marginTop:1
                         }}>
                         </View>
                     </View>
@@ -57,7 +57,7 @@ const Payment = ({navigation}) => {
                            top:0}}
                         >
                          <TouchableOpacity style = {styles.touchContainer}
-                         onPress={()=>navigation.navigate("KonfChat")}>
+                         onPress={()=>navigation.navigate("Buy")}>
                             <Image 
                             style = {styles.gambarTouch}
                             source={require('../assets/psikolog.jpg')}/>
@@ -75,23 +75,6 @@ const Payment = ({navigation}) => {
                         </TouchableOpacity>
                     </LinearGradient>
                 </View>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </View>
     )
 }
@@ -118,7 +101,7 @@ const styles = StyleSheet.create({
     Mpu:{
         marginTop:20,
         fontSize:20,
-        color:"black",
+        color:"white",
         fontWeight:"bold"   
      },
     titleKonsultasi:{
@@ -127,13 +110,17 @@ const styles = StyleSheet.create({
         fontWeight:"bold",
         marginTop:10,
         marginLeft:30,
+        textShadowColor: 'rgba(255, 255, 255, 0.75)',
+        textShadowOffset: {width: -1, height: 1},
+        textShadowRadius: 1
     },
     tulisanMember:{
         width:"59%",
         fontSize:12,
         marginLeft:25,
-        color:"#522289",
+        color:"white",
         paddingHorizontal:10,
+        
     },
     containerHot:{
         width:"100%", 

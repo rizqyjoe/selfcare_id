@@ -5,7 +5,6 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 //import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import HomeScreen from './HomeScreen';
-import TransactionScreen from './TransactionScreen';
 import PersonalScreen from './PersonalScreen';
 import NoteTodoList from './NoteTodoList';
 import Gratitude from './Gratitude';

@@ -3,33 +3,32 @@ import {StyleSheet,Image, Button, View,TouchableOpacity,Text, ImageBackground} f
 import Constants from 'expo-constants';
 import Modal from 'react-native-modal';
 import ChatWidget from '@papercups-io/chat-widget-native';
-import { useNavigation } from '@react-navigation/native';
 
- const ChatScreen=({navigation})=> {
+export default function ChatScreen2() {
   const [isModalVisible, setModalVisible] = React.useState(false);
-  //const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
+
           <Image source={require('../assets/backarrow.png')} style={{width:25,height:10, marginTop:10}}/>
 
-<ImageBackground
-  source={require('../assets/garox.jpg')}
-  style={styles.ImageBackground}/>
+      <ImageBackground
+        source={require('../assets/supriadi.jpg')}
+        style={styles.ImageBackground}/>
 
       <View style={styles.containerbelow}>
         <View style={styles.belowPosisi}>
          
           <View>
             <Text style={styles.titleTxt}>
-              Drs.Teja Anggora S.Psi
+              Drs.Nurfaisal Ahmad S.Psi
             </Text>
             <View style={styles.keteranganTxt}>
                 <Text style={styles.lokasiTxt}>
-                  Aktif 08.00-15.00 dan 18.00-20.00
+                  Aktif 08.00-10.00 dan 15.00-18.00
                 </Text>
                 <Text style={styles.lokasiTxt}>
-                  lulusan U-NIBBA Terbaik 
+                  lulusan Sekip Academy 
                 </Text>
             </View>
 
@@ -39,10 +38,10 @@ import { useNavigation } from '@react-navigation/native';
           <View style={styles.containerInfo}>
             <View style={styles.containerTxt}>
                 <Text style={styles.infoTxt}>
-                  Expert in Psychology 
+                  Expert in Psychology
                 </Text>
                 <Text style={{fontSize:14,fontWeight:"bold"}}>
-                  Above 2 years 
+                  Above 10 years 
                 </Text>
             </View>
 
@@ -61,9 +60,9 @@ import { useNavigation } from '@react-navigation/native';
               Description
             </Text>
             <Text style={styles.isiKontenTxt}>
-              Halo saya Teja, expert sudah punya pengalaman psikologi 
-              dan mentoring kesehatan mental di dunia industri 
-              selama lebih 2 tahun.
+              Halo saya Nurfaisal, expert sudah punya pengalaman psikologi 
+              dan sering melakukan terapi kesehatan mental di dunia medis 
+              selama lebih 10 tahun.
             </Text>
           </View>
 
@@ -73,7 +72,7 @@ import { useNavigation } from '@react-navigation/native';
             style = {styles.touchContainer}
             onPress={() => setModalVisible(true)}>
             <Text style={styles.textOk}>Konsultasi</Text>
-      </TouchableOpacity>
+            </TouchableOpacity>
 
       <Modal
         isVisible={isModalVisible}
@@ -82,14 +81,14 @@ import { useNavigation } from '@react-navigation/native';
       >
         <View style={styles.modal}>
           <ChatWidget
-            accountId="0d1288d6-41b5-441a-9ca7-7117477a480f"
-            title="Drs.Teja Anggora S.Psi"
+            accountId="ff689343-4b5b-4b97-9650-38ccd81b598e"
+            title="Drs.Nurfaisal Ahmad S.Psi"
             subtitle="We'll reply as soon as we can 😊"
             greeting="Selamat datang silahkan konsultasi dengan psikologi kami yang terbaik"
             baseUrl="https://app.papercups.io"
             customer={{
               name: 'Teja',
-              email: 'teja@gmail.com',
+              email: 'sensowner@gmail.com',
               external_id: '123',
             }}
           />
@@ -98,7 +97,7 @@ import { useNavigation } from '@react-navigation/native';
     </View>
   );
 }
-export default ChatScreen;
+
 const styles = StyleSheet.create({
   modal: {
     
@@ -113,6 +112,7 @@ const styles = StyleSheet.create({
     marginTop:Constants.statusBarHeight,
   },
   ImageBackground:{
+
     marginVertical:20,
     alignSelf: 'center',
     width:200,
@@ -122,7 +122,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     height:40,
     width:40,
-    color:"white",
     marginLeft:-50,
     alignItems:"center",
     justifyContent:"center",

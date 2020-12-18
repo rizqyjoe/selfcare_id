@@ -6,11 +6,14 @@ import HomeScreen from '../components/HomeScreen';
 import PersonalScreen from './PersonalScreen';
 import RegisterScreen from './RegisterScreen';
 import BottomMenu from './BottomMenu';
-import  {Transfer,TransferBerhasil} from './TransferScreen';
 import ChatScreen from "../Screen/ChatScreen";
 import Constants from 'expo-constants';
 import Payment from "../Payment/Payment";
-import KonfChat from "../Payment/KonfChat";
+import Buy from "../Payment/Buy";
+import Psikologis from '../Screen/Psikologis';
+import ChatScreen2 from '../Screen/ChatScreen2';
+import { TopUp,TopUpBerhasil } from "../Payment/KonfPay";
+import SuksesPayment from "../Payment/SuksesPayment";
 import FAQ from "../FAQ/FAQ";
 
 const Stack = createStackNavigator();
@@ -44,10 +47,15 @@ const MainStackMenu = () =>{
               name ="News"
               component = {HomeScreen}
               /> 
-             <Stack.Screen
-              name ="Transfer"
-              component = {Transfer}
+            <Stack.Screen
+              name ="TopUp"
+              component = {TopUp}
               />
+               <Stack.Screen
+              name ="TopUpBerhasil"
+              component = {SuksesPayment}
+              />
+           
               <Stack.Screen
             name = "Payment"
             component = {Payment}
@@ -55,17 +63,26 @@ const MainStackMenu = () =>{
             /> 
             
             <Stack.Screen
-            name = "KonfChat"
-            component = {KonfChat}
+            name = "Buy"
+            component = {Buy}
             options={{title:null}}
             /> 
-
-              <Stack.Screen
-            name = "Konsultasi"
+               <Stack.Screen
+            name = "Chat1"
             component = {ChatScreen}
             options={{title:null}}
             /> 
 
+                <Stack.Screen
+            name = "Chat2"
+            component = {ChatScreen2}
+            options={{title:null}}
+            /> 
+              <Stack.Screen
+            name = "Konsultasi"
+            component = {Psikologis}
+            options={{title:null}}
+            /> 
             <Stack.Screen
             name = "FAQ"
             component = {FAQ}
