@@ -6,9 +6,11 @@ import {theme} from "../reusable/theme";
 import TempData from "../reusable/tempData";
 import ToDoList from "./ToDoList";
 import AddListModal from "./AddListModal";
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default class GratitudeList extends React.Component {
+
     state={
         //jadiin tru untuk debug si modal
         addToDoVisible:false,
@@ -29,7 +31,9 @@ export default class GratitudeList extends React.Component {
       //     this.setState({user})
       //   });
       // }
-    
+      
+      
+
       toogleAddToDoModal() {
         this.setState({addToDoVisible:!this.state.addToDoVisible})
       }
@@ -56,21 +60,18 @@ export default class GratitudeList extends React.Component {
             >
               <AddListModal closeModal={() => this.toogleAddToDoModal()} addList={this.addList} />
             </Modal >
-            <View>
-              <Text>User : {this.state.user.uid}</Text>
-            </View>
             <View style={{flexDirection:"row"}}>
               <View style={styles.divider} />
                 <Text style={styles.title}>
-                Gratitude <Text style={{fontWeight:"700", color:Colors.blue}}>List</Text>
+                Gratitude <Text style={{fontWeight:"700", color:theme.colors.blue}}>List</Text>
                 </Text>
               <View style={styles.divider} />
             </View>
             <View style={{marginVertical:48}}>
               <TouchableOpacity style={styles.addList} onPress={() => this.toogleAddToDoModal()}>
-                <AntDesign name="plus" size={20} color={Colors.black} />
+                <AntDesign name="plus" size={20} color={theme.colors.black} />
               </TouchableOpacity>
-              <Text style={styles.add}>Add List</Text>
+              {/* <Text style={styles.add}>Add List</Text> */}
             </View>
             
             <View style={{height:275, marginLeft:10}}>
@@ -106,19 +107,20 @@ export default class GratitudeList extends React.Component {
       title:{
         fontSize:38,
         fontWeight:"700",
-        color:Colors.black,
+        color:theme.colors.black,
         paddingHorizontal:64,
       },
       addList:{
         borderWidth:2,
-        borderColor:"#d9d9d9",
+        borderColor:"#38B6FF",
         borderRadius:50,
-        padding:12,
+        paddingHorizontal:15,
+        paddingVertical:15,
         alignItems:"center",
         justifyContent:"center"
       },
       add:{
-        color:Colors.blue,
-        fontWeight:"600,"
+        color:theme.colors.black,
+        fontWeight:"600"
       },
 });

@@ -17,7 +17,8 @@ import FAQ from "../FAQ/FAQ";
 import index from "./Index";
 import LoginScreen from "./LoginScreen"
 import ForgotPasswordScreen from "./ForgotPasswordScreen";
-import AuthLoadingScreen from "./AuthLoadingScreen"
+import AuthLoadingScreen from "./AuthLoadingScreen";
+import GratitudeList from "./GratitudeList"
 
 const Stack = createStackNavigator(
   

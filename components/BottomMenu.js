@@ -17,9 +17,10 @@ function BottomMenu() {
   
     <Tab.Navigator 
       initialRouteName = "Home"
-      activeColor = "#0dd698"
+      activeColor = "#FFFFFF"
       labelStyle = {{fontSize:12}}
       style = {{backgroundColor:'tomato'}}
+      barStyle={{backgroundColor:"#38B6FF", height:60}}
       >
     <Tab.Screen 
       name="Home"

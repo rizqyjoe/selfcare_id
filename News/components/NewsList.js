@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { SafeAreaView, StyleSheet, View, Text, FlatList, TouchableOpacity } from 'react-native';
 import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import { color } from 'react-native-reanimated';
 
 const NewsList = ({ data, onNewsPressed, onRefresh, refreshing, ...other }) => {
     return (
@@ -18,7 +19,7 @@ const NewsList = ({ data, onNewsPressed, onRefresh, refreshing, ...other }) => {
                 <Card.Title
                     title={item.source.name}
                     subtitle={date}
-                    left={(props) => <Avatar.Icon {...props} icon="card-bulleted-outline" backgroundColor='#0390fc'/>}
+                    left={(props) => <Avatar.Icon {...props} icon="card-bulleted-outline" backgroundColor='#38B6FF' style={{color:'#FFF'}}/>}
                 />
                     <Card.Content>
                     <Title>{item.title}</Title>

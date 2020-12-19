@@ -131,6 +131,7 @@ const styles = StyleSheet.create({
     },
     headerbg: {
         flex: 3,
+        marginTop:10,
         width: null,
         alignSelf: 'stretch',
         justifyContent:"center",

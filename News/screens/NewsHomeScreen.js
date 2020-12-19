@@ -75,7 +75,7 @@ const NewsHomeScreen = ({ navigation }) => {
                             renderItem={({ item, index }) => {
                                 return (
                                     <TouchableOpacity 
-                                        style={{ backgroundColor: '#0390fc', flex:1, borderRadius: 20, marginRight: 10, padding: 5 }}
+                                        style={{ backgroundColor: '#38B6FF', flex:1, borderRadius: 20, marginRight: 10, padding: 7, paddingHorizontal:10 }}
                                         onPress={() => {
                                             if(item.category === 'Latest') {
                                                 setCurrentCategory('')
@@ -116,17 +116,18 @@ const styles = StyleSheet.create({
       justifyContent: 'flex-start',
     },
     praHeading:{
-        backgroundColor:'#00a46c',
+        backgroundColor:'#38B6FF',
     },
     heading: {
-      marginLeft: 10,
-      marginTop: 10,
+      marginTop: 40,
+      marginBottom:20,
       fontSize: 30,
       color:'white',
+      alignSelf:'center'
     },
     subHeading: {
       marginLeft: 10,
-      fontSize:16,
+      fontSize:14,
       color:'white',
     },
     bgImage: {

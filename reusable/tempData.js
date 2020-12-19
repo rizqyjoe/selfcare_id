@@ -21,7 +21,7 @@ export default TempData=[
     {
       id:2,
       name:"Can Eat this Day",
-      color:"black",
+      color:"#03dffc",
       todos:[
         {
           title:"Drink",
