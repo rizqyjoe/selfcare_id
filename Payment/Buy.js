@@ -34,7 +34,7 @@ const Buy = ({navigation}) => {
                                     </Text>
                                     <Text style ={styles.isiDeskripsi}>
                                         Konsultasi sepuasnya dengan 
-                                        psikolog dan psikiater terbaik dari tim kami.Memiliki
+                                        psikolog dan psikiater terbaik dari tim kami. Memiliki
                                         izin dari IPKI.
                                     </Text>
                         </View>

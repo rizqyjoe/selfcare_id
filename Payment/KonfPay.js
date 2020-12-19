@@ -30,7 +30,7 @@ const TopUp = () => {
                     placeholder = "Nominal Top Up"/>
            <TouchableOpacity onPress={()=>navigation.navigate("TopUpBerhasil")}>                
                 <View style = {gaya.buttonPrimary}>
-                <Text style = {{color: 'black'}}>Submit</Text>
+                <Text style = {{color: 'white', fontSize: 22}}>Submit</Text>
                 </View>
             </TouchableOpacity>
 
@@ -84,12 +84,15 @@ const gaya = StyleSheet.create({
         fontWeight:"bold",
         marginTop:10,
         marginLeft:30,
+        textShadowColor: 'rgba(255, 255, 255, 0.75)',
+        textShadowOffset: {width: -1, height: 1},
+        textShadowRadius: 1
     },
     tulisanMember:{
         width:"59%",
         fontSize:15,
         marginLeft:25,
-        color:"#522289",
+        color:"#fff",
         paddingHorizontal:10,
     },
     containerContent:{
@@ -101,6 +104,7 @@ const gaya = StyleSheet.create({
     textInputPrimary:{
         marginTop:8,
         marginHorizontal:21,
+        paddingLeft: 10,
         height:48,
         borderWidth:1,
         borderRadius:15,

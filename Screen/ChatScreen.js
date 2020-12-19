@@ -14,7 +14,7 @@ import { useNavigation } from '@react-navigation/native';
           <Image source={require('../assets/backarrow.png')} style={{width:25,height:10, marginTop:10}}/>
 
 <ImageBackground
-  source={require('../assets/garox.jpg')}
+  source={require('../assets/avatar2.png')}
   style={styles.ImageBackground}/>
 
       <View style={styles.containerbelow}>
@@ -22,14 +22,14 @@ import { useNavigation } from '@react-navigation/native';
          
           <View>
             <Text style={styles.titleTxt}>
-              Drs.Teja Anggora S.Psi
+              Drs. Alex Luthor, S.Psi.
             </Text>
             <View style={styles.keteranganTxt}>
                 <Text style={styles.lokasiTxt}>
                   Aktif 08.00-15.00 dan 18.00-20.00
                 </Text>
                 <Text style={styles.lokasiTxt}>
-                  lulusan U-NIBBA Terbaik 
+                  Institute of Psychology
                 </Text>
             </View>
 
@@ -42,7 +42,7 @@ import { useNavigation } from '@react-navigation/native';
                   Expert in Psychology 
                 </Text>
                 <Text style={{fontSize:14,fontWeight:"bold"}}>
-                  Above 2 years 
+                ± 10 years 
                 </Text>
             </View>
 
@@ -61,9 +61,9 @@ import { useNavigation } from '@react-navigation/native';
               Description
             </Text>
             <Text style={styles.isiKontenTxt}>
-              Halo saya Teja, expert sudah punya pengalaman psikologi 
-              dan mentoring kesehatan mental di dunia industri 
-              selama lebih 2 tahun.
+              Halo saya Alex, expert sudah punya pengalaman psikologi 
+              dan mentoring kesehatan mental di dunia industri kurang lebih 
+              selama 10 tahun.
             </Text>
           </View>
 
@@ -83,7 +83,7 @@ import { useNavigation } from '@react-navigation/native';
         <View style={styles.modal}>
           <ChatWidget
             accountId="0d1288d6-41b5-441a-9ca7-7117477a480f"
-            title="Drs.Teja Anggora S.Psi"
+            title="Drs. Alex Luthor, S.Psi."
             subtitle="We'll reply as soon as we can 😊"
             greeting="Selamat datang silahkan konsultasi dengan psikologi kami yang terbaik"
             baseUrl="https://app.papercups.io"
@@ -152,8 +152,8 @@ const styles = StyleSheet.create({
     fontWeight:"bold",
     fontSize:12,
     color:"red",
-    marginLeft:25,
     paddingHorizontal:10,
+    paddingVertical:2,
   },
   containerInfo:{
     flexDirection:"row",
@@ -202,7 +202,8 @@ const styles = StyleSheet.create({
   },
   isiKontenTxt:{
     fontWeight:"bold",
-    color:"#B2B2B2"
+    color:"#B2B2B2",
+    textAlign: 'justify'
   },
   containerShapechat:{
     width:"100%",

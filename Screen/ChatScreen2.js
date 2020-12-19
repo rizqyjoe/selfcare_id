@@ -13,7 +13,7 @@ export default function ChatScreen2() {
           <Image source={require('../assets/backarrow.png')} style={{width:25,height:10, marginTop:10}}/>
 
       <ImageBackground
-        source={require('../assets/supriadi.jpg')}
+        source={require('../assets/avatar1.png')}
         style={styles.ImageBackground}/>
 
       <View style={styles.containerbelow}>
@@ -21,14 +21,14 @@ export default function ChatScreen2() {
          
           <View>
             <Text style={styles.titleTxt}>
-              Drs.Nurfaisal Ahmad S.Psi
+              Drs. Rudy Nurohman, S.Psi.
             </Text>
             <View style={styles.keteranganTxt}>
                 <Text style={styles.lokasiTxt}>
                   Aktif 08.00-10.00 dan 15.00-18.00
                 </Text>
                 <Text style={styles.lokasiTxt}>
-                  lulusan Sekip Academy 
+                  Institute of Psychology 
                 </Text>
             </View>
 
@@ -41,7 +41,7 @@ export default function ChatScreen2() {
                   Expert in Psychology
                 </Text>
                 <Text style={{fontSize:14,fontWeight:"bold"}}>
-                  Above 10 years 
+                ± 5 years 
                 </Text>
             </View>
 
@@ -60,9 +60,9 @@ export default function ChatScreen2() {
               Description
             </Text>
             <Text style={styles.isiKontenTxt}>
-              Halo saya Nurfaisal, expert sudah punya pengalaman psikologi 
+              Halo saya Rudy, expert sudah punya pengalaman psikologi 
               dan sering melakukan terapi kesehatan mental di dunia medis 
-              selama lebih 10 tahun.
+              kurang lebih selama 5 tahun.
             </Text>
           </View>
 
@@ -82,7 +82,7 @@ export default function ChatScreen2() {
         <View style={styles.modal}>
           <ChatWidget
             accountId="ff689343-4b5b-4b97-9650-38ccd81b598e"
-            title="Drs.Nurfaisal Ahmad S.Psi"
+            title="Drs. Rudy Nurohman, S.Psi."
             subtitle="We'll reply as soon as we can 😊"
             greeting="Selamat datang silahkan konsultasi dengan psikologi kami yang terbaik"
             baseUrl="https://app.papercups.io"
@@ -151,8 +151,8 @@ const styles = StyleSheet.create({
     fontWeight:"bold",
     fontSize:12,
     color:"red",
-    marginLeft:25,
     paddingHorizontal:10,
+    paddingVertical:2,
   },
   containerInfo:{
     flexDirection:"row",
@@ -201,7 +201,8 @@ const styles = StyleSheet.create({
   },
   isiKontenTxt:{
     fontWeight:"bold",
-    color:"#B2B2B2"
+    color:"#B2B2B2",
+    textAlign:"justify"
   },
   containerShapechat:{
     width:"100%",

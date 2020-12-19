@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     Mpu:{
         marginTop:20,
         fontSize:20,
-        color:"white",
+        color:"#fffb19",
         fontWeight:"bold"   
      },
     titleKonsultasi:{

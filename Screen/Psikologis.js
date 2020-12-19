@@ -25,7 +25,7 @@ const Psikologis = ({navigation}) => {
             onPress={()=>navigation.navigate("Chat1")}
             >
                 <Image 
-                    source={require('../assets/garox.jpg')}
+                    source={require('../assets/avatar2.png')}
                     style={{
                         width:120,
                         height:125,
@@ -34,16 +34,16 @@ const Psikologis = ({navigation}) => {
                 />
                 <View style ={styles.containerTulisan}>
                     <Text style={styles.txtStyle}>
-                        Drs.Teja Anggora S.Psi.
+                    Drs. Alex Luthor, S.Psi.
                     </Text>
                     <Text>
-                        Expert psychology
+                        Expert Psychologist
                     </Text>
                     <Text>
-                    Alumni U-NIBBA Terbaik
+                    Institute of Psychology 
                     </Text>
                 </View>
-                <Text style={styles.txtAlumni}>Online</Text>
+                <Text style={styles.txtAlumnii}>Online</Text>
             </TouchableOpacity>
            
             <TouchableOpacity 
@@ -51,7 +51,7 @@ const Psikologis = ({navigation}) => {
             style = {styles.shapeIsi}>
 
                 <Image 
-                    source={require('../assets/supriadi.jpg')}
+                    source={require('../assets/avatar1.png')}
                     style={{
                         width:120,
                         height:125,
@@ -60,10 +60,13 @@ const Psikologis = ({navigation}) => {
                 />
                 <View style ={styles.containerTulisan}>
                     <Text style={styles.txtStyle}>
-                        Drs.Nurfaisal Ahmad S.Psi
+                    Drs. Rudy Nurohman, S.Psi.
                     </Text>
                     <Text>
-                    Alumni Sekip Academy
+                        Expert Psychologist
+                    </Text>
+                    <Text>
+                    Institute of Psychology 
                     </Text>
                 </View>
                 <Text style={styles.txtAlumni}>Online</Text>
@@ -100,12 +103,15 @@ const styles = StyleSheet.create({
         fontWeight:"bold",
         marginTop:10,
         marginLeft:30,
+        textShadowColor: 'rgba(255, 255, 255, 0.75)',
+        textShadowOffset: {width: -1, height: 1},
+        textShadowRadius: 1
     },
     tulisanMember:{
         width:"59%",
         fontSize:12,
         marginLeft:25,
-        color:"#522289",
+        color:"#fff",
         paddingHorizontal:10,
     },
     shapeIsi:{
@@ -128,8 +134,14 @@ const styles = StyleSheet.create({
     },
     txtAlumni:{
         fontWeight:"bold",
-        paddingRight: 10,
         color:"#00ff00",
+    },
+    txtAlumnii:{
+        fontWeight:"bold",
+        color:"#00ff00",
+        paddingLeft:30,
+    },
+    txtStyle:{
+        paddingRight:5,
     }
-
 })
